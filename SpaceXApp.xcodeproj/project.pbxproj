@@ -16,6 +16,7 @@
 		1A5FA22128902DFD0047EFAE /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22028902DFD0047EFAE /* Rocket.swift */; };
 		1A5FA224289030370047EFAE /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA223289030370047EFAE /* DataStore.swift */; };
 		1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22528904E830047EFAE /* PageViewController.swift */; };
+		1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22728918ECA0047EFAE /* StartViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1A5FA22028902DFD0047EFAE /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		1A5FA223289030370047EFAE /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		1A5FA22528904E830047EFAE /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		1A5FA22728918ECA0047EFAE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 		1A5FA21928902A2D0047EFAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				1A5FA22728918ECA0047EFAE /* StartViewController.swift */,
 				1A5FA22528904E830047EFAE /* PageViewController.swift */,
 				1A5FA209288FE4250047EFAE /* RocketViewController.swift */,
 			);
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A5FA20A288FE4250047EFAE /* RocketViewController.swift in Sources */,
+				1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */,
 				1A5FA224289030370047EFAE /* DataStore.swift in Sources */,
 				1A5FA206288FE4250047EFAE /* AppDelegate.swift in Sources */,
 				1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */,
