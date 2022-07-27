@@ -14,7 +14,7 @@ class PageViewController: UIPageViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view.backgroundColor = .red
+        view.backgroundColor = .black
         self.dataSource = self
         
         guard let rocketVC = showRocket(0) else { return }
