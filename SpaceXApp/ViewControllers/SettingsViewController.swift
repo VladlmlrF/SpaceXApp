@@ -32,10 +32,10 @@ class SettingsViewController: UIViewController {
             payloadSegmentedControl
         ]
         
-        selectSegment(title: settings.height.title, in: heightSegmentedControl)
-        selectSegment(title: settings.diameter.title, in: diameterSegmentedControl)
-        selectSegment(title: settings.weight.title, in: massSegmentedControl)
-        selectSegment(title: settings.payload.title, in: payloadSegmentedControl)
+        selectSegment(title: settings.height.rawValue, in: heightSegmentedControl)
+        selectSegment(title: settings.diameter.rawValue, in: diameterSegmentedControl)
+        selectSegment(title: settings.weight.rawValue, in: massSegmentedControl)
+        selectSegment(title: settings.payload.rawValue, in: payloadSegmentedControl)
         
         
         for segmentedControler in segmentedControlers {
@@ -45,7 +45,11 @@ class SettingsViewController: UIViewController {
     }
 
     @IBAction func closeAction() {
-        
+        settings.height = Settings.LengthUnit(rawValue: heightSegmentedControl.selectedTitle()) ?? .m
+        settings.diameter = Settings.LengthUnit(rawValue: diameterSegmentedControl.selectedTitle()) ?? .m
+        settings.weight = Settings.MassUnit(rawValue: massSegmentedControl.selectedTitle()) ?? .kg
+        settings.payload = Settings.MassUnit(rawValue: payloadSegmentedControl.selectedTitle()) ?? .kg
+          
     }
     
     private func selectSegment(title: String, in segmentedControl: UISegmentedControl) {
@@ -56,6 +60,13 @@ class SettingsViewController: UIViewController {
             }
         }
     }
-    
+}
+
+private extension UISegmentedControl {
+    func selectedTitle() -> String {
+        self.titleForSegment(
+            at: self.selectedSegmentIndex
+        ) ?? ""
+    }
 }
 

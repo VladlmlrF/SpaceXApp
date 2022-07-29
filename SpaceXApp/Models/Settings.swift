@@ -8,38 +8,20 @@
 import Foundation
 
 struct Settings {
-    enum LengthUnit {
+    enum LengthUnit: String {
         case m
         case ft
-        
-        var title: String {
-            switch self {
-            case .m:
-                return "m"
-            case .ft:
-                return "ft"
-            }
-        }
     }
     
-    enum MassUnit {
+    enum MassUnit: String {
         case kg
-        case ib
-        
-        var title: String {
-            switch self {
-            case .kg:
-                return "kg"
-            case .ib:
-                return "ib"
-            }
-        }
+        case ib = "Ib"
     }
 
-    let height: LengthUnit
-    let diameter: LengthUnit
+    var height: LengthUnit
+    var diameter: LengthUnit
     
-    let weight: MassUnit
-    let payload: MassUnit
+    var weight: MassUnit
+    var payload: MassUnit
     
 }
