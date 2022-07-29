@@ -8,9 +8,7 @@
 import UIKit
 
 class RocketLaunchViewController: UITableViewController {
-
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
