@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  SpaceXApp
+//  spaceXModels
 //
-//  Created by Владимир Фалин on 26.07.2022.
+//  Created by Владимир Фалин on 30.07.2022.
 //
 
 import UIKit
