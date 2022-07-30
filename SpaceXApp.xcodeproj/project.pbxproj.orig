@@ -8,41 +8,48 @@
 
 /* Begin PBXBuildFile section */
 		1A5FA206288FE4250047EFAE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA205288FE4250047EFAE /* AppDelegate.swift */; };
-		1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA209288FE4250047EFAE /* SettingsViewController.swift */; };
-		1A5FA20D288FE4250047EFAE /* (null) in Resources */ = {isa = PBXBuildFile; };
+		1A5FA208288FE4250047EFAE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA207288FE4250047EFAE /* SceneDelegate.swift */; };
+		1A5FA20A288FE4250047EFAE /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA209288FE4250047EFAE /* RocketViewController.swift */; };
+		1A5FA20D288FE4250047EFAE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FA20B288FE4250047EFAE /* Main.storyboard */; };
 		1A5FA20F288FE4250047EFAE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FA20E288FE4250047EFAE /* Assets.xcassets */; };
 		1A5FA212288FE4250047EFAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FA210288FE4250047EFAE /* LaunchScreen.storyboard */; };
 		1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22528904E830047EFAE /* PageViewController.swift */; };
 		1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22728918ECA0047EFAE /* StartViewController.swift */; };
+<<<<<<< HEAD
+		1AB5D69728955474004DDC7C /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5D69628955474004DDC7C /* Rocket.swift */; };
+		1AB5D69928955481004DDC7C /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AB5D69828955481004DDC7C /* DataStore.swift */; };
+=======
+    1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA209288FE4250047EFAE /* SettingsViewController.swift */; };
 		5D3CA2332891DADD00B94905 /* RocketLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */; };
 		5DAFD0E92892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFD0E82892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard */; };
 		5DAFD0EB2893253C00DAAB71 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0EA2893253C00DAAB71 /* Settings.swift */; };
 		5DAFD0ED2893269500DAAB71 /* RocketLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0EC2893269500DAAB71 /* RocketLaunch.swift */; };
 		5DAFD0EF28933FFF00DAAB71 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFD0EE28933FFE00DAAB71 /* Settings.storyboard */; };
-		5DAFD0F32895C65B00DAAB71 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0F12895C65A00DAAB71 /* DataStore.swift */; };
-		5DAFD0F52895C70600DAAB71 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0F42895C70600DAAB71 /* Rocket.swift */; };
-		5DAFD0F72895C77000DAAB71 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */; };
-		5DAFD0FF2895CC1000DAAB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFD0FD2895CC1000DAAB71 /* Main.storyboard */; };
+>>>>>>> parent of a55e522 (Revert "Nastya")
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1A5FA202288FE4250047EFAE /* SpaceXApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpaceXApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5FA205288FE4250047EFAE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1A5FA209288FE4250047EFAE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		1A5FA207288FE4250047EFAE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A5FA209288FE4250047EFAE /* RocketViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
+		1A5FA20C288FE4250047EFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A5FA20E288FE4250047EFAE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A5FA211288FE4250047EFAE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A5FA213288FE4250047EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5FA22528904E830047EFAE /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1A5FA22728918ECA0047EFAE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		1AB5D69628955474004DDC7C /* Rocket.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
+		1AB5D69828955481004DDC7C /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
+=======
+    1A5FA209288FE4250047EFAE /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchViewController.swift; sourceTree = "<group>"; };
 		5DAFD0E82892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RocketLaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		5DAFD0EA2893253C00DAAB71 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5DAFD0EC2893269500DAAB71 /* RocketLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunch.swift; sourceTree = "<group>"; };
 		5DAFD0EE28933FFE00DAAB71 /* Settings.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
-		5DAFD0F12895C65A00DAAB71 /* DataStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
-		5DAFD0F42895C70600DAAB71 /* Rocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
-		5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
-		5DAFD0FE2895CC1000DAAB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+>>>>>>> parent of a55e522 (Revert "Nastya")
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,10 +95,10 @@
 		1A5FA21928902A2D0047EFAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */,
 				1A5FA22728918ECA0047EFAE /* StartViewController.swift */,
 				1A5FA22528904E830047EFAE /* PageViewController.swift */,
-				1A5FA209288FE4250047EFAE /* SettingsViewController.swift */,
+				1A5FA209288FE4250047EFAE /* RocketViewController.swift */,
+        1A5FA209288FE4250047EFAE /* SettingsViewController.swift */,
 				5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */,
 			);
 			path = ViewControllers;
@@ -100,9 +107,9 @@
 		1A5FA21A28902A450047EFAE /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				5DAFD0FD2895CC1000DAAB71 /* Main.storyboard */,
 				1A5FA210288FE4250047EFAE /* LaunchScreen.storyboard */,
-				5DAFD0EE28933FFE00DAAB71 /* Settings.storyboard */,
+				1A5FA20B288FE4250047EFAE /* Main.storyboard */,
+        5DAFD0EE28933FFE00DAAB71 /* Settings.storyboard */,
 				5DAFD0E82892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard */,
 			);
 			path = Storyboards;
@@ -112,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				1A5FA205288FE4250047EFAE /* AppDelegate.swift */,
+				1A5FA207288FE4250047EFAE /* SceneDelegate.swift */,
 				1A5FA213288FE4250047EFAE /* Info.plist */,
 			);
 			path = App;
@@ -128,9 +136,13 @@
 		1AB5D69428955446004DDC7C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				5DAFD0F42895C70600DAAB71 /* Rocket.swift */,
-				5DAFD0EA2893253C00DAAB71 /* Settings.swift */,
+<<<<<<< HEAD
+				1AB5D69628955474004DDC7C /* Rocket.swift */,
+=======
+				1A5FA22028902DFD0047EFAE /* Rocket.swift */,
+        5DAFD0EA2893253C00DAAB71 /* Settings.swift */,
 				5DAFD0EC2893269500DAAB71 /* RocketLaunch.swift */,
+>>>>>>> parent of a55e522 (Revert "Nastya")
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -138,7 +150,7 @@
 		1AB5D6952895544F004DDC7C /* DataStore */ = {
 			isa = PBXGroup;
 			children = (
-				5DAFD0F12895C65A00DAAB71 /* DataStore.swift */,
+				1AB5D69828955481004DDC7C /* DataStore.swift */,
 			);
 			path = DataStore;
 			sourceTree = "<group>";
@@ -203,8 +215,6 @@
 			files = (
 				1A5FA212288FE4250047EFAE /* LaunchScreen.storyboard in Resources */,
 				1A5FA20F288FE4250047EFAE /* Assets.xcassets in Resources */,
-				1A5FA20D288FE4250047EFAE /* (null) in Resources */,
-				5DAFD0FF2895CC1000DAAB71 /* Main.storyboard in Resources */,
 				5DAFD0E92892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard in Resources */,
 				5DAFD0EF28933FFF00DAAB71 /* Settings.storyboard in Resources */,
 			);
@@ -217,17 +227,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */,
+				1AB5D69928955481004DDC7C /* DataStore.swift in Sources */,
+				1A5FA20A288FE4250047EFAE /* RocketViewController.swift in Sources */,
 				1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */,
 				1A5FA206288FE4250047EFAE /* AppDelegate.swift in Sources */,
-				5DAFD0F32895C65B00DAAB71 /* DataStore.swift in Sources */,
+				1AB5D69728955474004DDC7C /* Rocket.swift in Sources */,
 				1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */,
-				1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */,
+				1A5FA208288FE4250047EFAE /* SceneDelegate.swift in Sources */,
+<<<<<<< HEAD
+=======
+				1A5FA22128902DFD0047EFAE /* Rocket.swift in Sources */,
+        1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */,
 				5DAFD0EB2893253C00DAAB71 /* Settings.swift in Sources */,
-				5DAFD0F72895C77000DAAB71 /* RocketViewController.swift in Sources */,
 				5DAFD0ED2893269500DAAB71 /* RocketLaunch.swift in Sources */,
 				5D3CA2332891DADD00B94905 /* RocketLaunchViewController.swift in Sources */,
-				5DAFD0F52895C70600DAAB71 /* Rocket.swift in Sources */,
+>>>>>>> parent of a55e522 (Revert "Nastya")
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,14 +254,6 @@
 				1A5FA211288FE4250047EFAE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5DAFD0FD2895CC1000DAAB71 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5DAFD0FE2895CC1000DAAB71 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -379,11 +385,10 @@
 				INFOPLIST_FILE = SpaceXApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Settings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -409,11 +414,10 @@
 				INFOPLIST_FILE = SpaceXApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = Settings;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

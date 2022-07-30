@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController title="Settings" id="BYZ-38-t0r" customClass="SettingsViewController" customModule="SpaceXApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aFB-re-2qN">
+                                <rect key="frame" x="158.5" y="60" width="97.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Настройки">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wJ-eb-3tx">
+                                <rect key="frame" x="317.5" y="60" width="80.5" height="31"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Закрыть">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="closeAction" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oo6-Df-NzN"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="H0v-rr-aXa">
+                                <rect key="frame" x="40" y="131" width="334" height="184"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2S-YV-tXQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="334" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Высота" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KPn-Vf-V0V">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="7E7-FF-Pwt">
+                                                <rect key="frame" x="242" y="0.0" width="92" height="32"/>
+                                                <segments>
+                                                    <segment title="m"/>
+                                                    <segment title="ft"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nDC-El-nW4">
+                                        <rect key="frame" x="0.0" y="51" width="334" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Диаметр" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MgE-TS-Gcu">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fCm-d1-KPg">
+                                                <rect key="frame" x="242" y="0.0" width="92" height="32"/>
+                                                <segments>
+                                                    <segment title="m"/>
+                                                    <segment title="ft"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CbS-ie-7pW">
+                                        <rect key="frame" x="0.0" y="102" width="334" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Масса" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMk-fn-ALM">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hhe-NL-cnI">
+                                                <rect key="frame" x="242" y="0.0" width="92" height="32"/>
+                                                <segments>
+                                                    <segment title="kg"/>
+                                                    <segment title="Ib"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tbd-9r-arK">
+                                        <rect key="frame" x="0.0" y="153" width="334" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="757" text="Полезная нагрузка" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5xm-HP-juA">
+                                                <rect key="frame" x="0.0" y="0.0" width="242" height="31"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="81A-6G-YIn">
+                                                <rect key="frame" x="242" y="0.0" width="92" height="32"/>
+                                                <segments>
+                                                    <segment title="kg"/>
+                                                    <segment title="Ib"/>
+                                                </segments>
+                                            </segmentedControl>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="81A-6G-YIn" firstAttribute="width" secondItem="hhe-NL-cnI" secondAttribute="width" id="Abg-Ue-mK3"/>
+                                    <constraint firstItem="fCm-d1-KPg" firstAttribute="width" secondItem="hhe-NL-cnI" secondAttribute="width" id="qPF-H0-T6b"/>
+                                    <constraint firstItem="7E7-FF-Pwt" firstAttribute="width" secondItem="fCm-d1-KPg" secondAttribute="width" id="vTY-81-7ZU"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2wJ-eb-3tx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="1r7-nh-3Q3"/>
+                            <constraint firstItem="aFB-re-2qN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3A1-cs-4pf"/>
+                            <constraint firstItem="aFB-re-2qN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="6hr-MN-ADu"/>
+                            <constraint firstItem="H0v-rr-aXa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="aRZ-hf-66o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2wJ-eb-3tx" secondAttribute="trailing" constant="16" id="hFq-f5-pfd"/>
+                            <constraint firstItem="H0v-rr-aXa" firstAttribute="top" secondItem="aFB-re-2qN" secondAttribute="bottom" constant="40" id="m4f-T6-4UL"/>
+                            <constraint firstItem="7E7-FF-Pwt" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.222222" id="pYk-Eh-plJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="H0v-rr-aXa" secondAttribute="trailing" constant="40" id="xTX-dl-6O7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diameterSegmentedControl" destination="fCm-d1-KPg" id="PKe-1U-tll"/>
+                        <outlet property="heightSegmentedControl" destination="7E7-FF-Pwt" id="LQ9-5M-7Q9"/>
+                        <outlet property="massSegmentedControl" destination="hhe-NL-cnI" id="kdI-qL-WFS"/>
+                        <outlet property="payloadSegmentedControl" destination="81A-6G-YIn" id="bqc-j1-TUE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="118.52678571428571"/>
+        </scene>
+    </scenes>
+</document>
