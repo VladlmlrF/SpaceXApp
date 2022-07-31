@@ -21,6 +21,7 @@ struct Rocket {
     let secondStageEngines: String
     let secondStageFuel: String
     let secondStageBurn: String
+    let rocketLaunches: [RocketLaunch]
 }
 
 extension Rocket {
@@ -42,6 +43,7 @@ extension Rocket {
         let secondStageEngines = DataStore.shared.secondStageEngines
         let secondStageFuels = DataStore.shared.secondStageFuels
         let secondStageBurns = DataStore.shared.firstStageBurns
+        let launches = DataStore.shared.launches
         
         for index in 0..<images.count {
             let rocket = Rocket(
@@ -59,7 +61,8 @@ extension Rocket {
                 firstStageBurn: firstStageBurns[index],
                 secondStageEngines: secondStageEngines[index],
                 secondStageFuel: secondStageFuels[index],
-                secondStageBurn: secondStageBurns[index]
+                secondStageBurn: secondStageBurns[index],
+                rocketLaunches: launches[index]
             )
             rockets.append(rocket)
         }

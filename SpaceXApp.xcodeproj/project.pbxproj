@@ -14,7 +14,6 @@
 		1A5FA212288FE4250047EFAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FA210288FE4250047EFAE /* LaunchScreen.storyboard */; };
 		1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22528904E830047EFAE /* PageViewController.swift */; };
 		1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FA22728918ECA0047EFAE /* StartViewController.swift */; };
-		5D3CA2332891DADD00B94905 /* RocketLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */; };
 		5DAFD0E92892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFD0E82892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard */; };
 		5DAFD0EB2893253C00DAAB71 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0EA2893253C00DAAB71 /* Settings.swift */; };
 		5DAFD0ED2893269500DAAB71 /* RocketLaunch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0EC2893269500DAAB71 /* RocketLaunch.swift */; };
@@ -23,6 +22,7 @@
 		5DAFD0F52895C70600DAAB71 /* Rocket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0F42895C70600DAAB71 /* Rocket.swift */; };
 		5DAFD0F72895C77000DAAB71 /* RocketViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */; };
 		5DAFD0FF2895CC1000DAAB71 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5DAFD0FD2895CC1000DAAB71 /* Main.storyboard */; };
+		5DAFD10128965C1200DAAB71 /* RocketLaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DAFD10028965C1200DAAB71 /* RocketLaunchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,7 +34,6 @@
 		1A5FA213288FE4250047EFAE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5FA22528904E830047EFAE /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		1A5FA22728918ECA0047EFAE /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
-		5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchViewController.swift; sourceTree = "<group>"; };
 		5DAFD0E82892AD1300DAAB71 /* RocketLaunchStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RocketLaunchStoryboard.storyboard; sourceTree = "<group>"; };
 		5DAFD0EA2893253C00DAAB71 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		5DAFD0EC2893269500DAAB71 /* RocketLaunch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunch.swift; sourceTree = "<group>"; };
@@ -43,6 +42,7 @@
 		5DAFD0F42895C70600DAAB71 /* Rocket.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rocket.swift; sourceTree = "<group>"; };
 		5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RocketViewController.swift; sourceTree = "<group>"; };
 		5DAFD0FE2895CC1000DAAB71 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5DAFD10028965C1200DAAB71 /* RocketLaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RocketLaunchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,7 +92,7 @@
 				1A5FA22728918ECA0047EFAE /* StartViewController.swift */,
 				1A5FA22528904E830047EFAE /* PageViewController.swift */,
 				1A5FA209288FE4250047EFAE /* SettingsViewController.swift */,
-				5D3CA2322891DADD00B94905 /* RocketLaunchViewController.swift */,
+				5DAFD10028965C1200DAAB71 /* RocketLaunchViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -219,6 +219,7 @@
 			files = (
 				1A5FA20A288FE4250047EFAE /* SettingsViewController.swift in Sources */,
 				1A5FA22828918ECA0047EFAE /* StartViewController.swift in Sources */,
+				5DAFD10128965C1200DAAB71 /* RocketLaunchViewController.swift in Sources */,
 				1A5FA206288FE4250047EFAE /* AppDelegate.swift in Sources */,
 				5DAFD0F32895C65B00DAAB71 /* DataStore.swift in Sources */,
 				1A5FA22628904E830047EFAE /* PageViewController.swift in Sources */,
@@ -226,7 +227,6 @@
 				5DAFD0EB2893253C00DAAB71 /* Settings.swift in Sources */,
 				5DAFD0F72895C77000DAAB71 /* RocketViewController.swift in Sources */,
 				5DAFD0ED2893269500DAAB71 /* RocketLaunch.swift in Sources */,
-				5D3CA2332891DADD00B94905 /* RocketLaunchViewController.swift in Sources */,
 				5DAFD0F52895C70600DAAB71 /* Rocket.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
