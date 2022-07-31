@@ -8,7 +8,11 @@
 import Foundation
 
 struct RocketLaunch {
-    let rocketName: String
-    let date: Date
+    let launchName: String
+    let date: String
     let isLaunchSucceded: Bool
+    
+    var imageName: String {
+        return isLaunchSucceded ? "launchSucces" : "launchFail"
+    }
 }
