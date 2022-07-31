@@ -15,7 +15,7 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
 
         timer = Timer.scheduledTimer(
-            timeInterval: 3,
+            timeInterval: 1,
             target: self,
             selector: #selector(someFunc),
             userInfo: nil,

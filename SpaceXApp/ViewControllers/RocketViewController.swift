@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol SettingsViewControllerDelegate {
+    func setUnits(settings: Settings)
+}
+
 class RocketViewController: UIViewController {
 
     //MARK: - IB Outlets
@@ -65,25 +69,53 @@ class RocketViewController: UIViewController {
         
         setupViews()
         
-        heightValueLabel.text = rocket.height.formatted()
         heightUnitLabel.text = heightUnit
+        switch heightUnit {
+        case "м":
+            heightValueLabel.text = String(rocket.height)
+        default:
+            heightValueLabel.text = String(rocket.height * 3.28)
+        }
         
-        diameterValueLabel.text = rocket.diameter.formatted()
         diameterUnitLabel.text = diameterUnit
+        switch diameterUnit {
+        case "м":
+            diameterValueLabel.text = String(rocket.diameter)
+        default:
+            diameterValueLabel.text = String(rocket.diameter * 3.28)
+        }
         
-        massValueLabel.text = rocket.mass.formatted()
         massUnitLabel.text = massUnit
+        switch massUnit {
+        case "кг":
+            massValueLabel.text = String(rocket.mass)
+        default:
+            massValueLabel.text = String(rocket.mass * 2.2)
+        }
         
-        loadValueLabel.text = rocket.load.formatted()
         loadUnitLabel.text = loadUnit
+        switch loadUnit {
+        case "кг":
+            loadValueLabel.text = String(rocket.load)
+        default:
+            loadValueLabel.text = String(rocket.load * 2.2)
+        }
         
         setupTableView()
     }
     
-    // MARK: - IB Actions
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.navigationBar.isHidden = true
+    }
     
-    @IBAction func toSettings() {
-        //Переход на экран с настройками от Насти
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let rocketLaunchVC = segue.destination as? RocketLaunchViewController else { return }
+        //guard let settingsVC = segue.destination as? SettingsViewController else { return }
+        rocketLaunchVC.rocketName = rocket.name
+        //rocketLaunchVC.rocket = rocket
+        rocketLaunchVC.rocketLaunches = rocket.rocketLaunches
+        //settingsVC.delegate = self
     }
     
     //MARK: - Private methods
@@ -102,7 +134,7 @@ class RocketViewController: UIViewController {
     }
     
     @objc func toLaunches() {
-        // Переход на экран с запусками от Насти
+        performSegue(withIdentifier: "toLaunches", sender: nil)
     }
 }
 
@@ -215,5 +247,16 @@ extension RocketViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         sectionNames[section]
+    }
+}
+
+//MARK: - SettingsViewControllerDelegate
+
+extension RocketViewController: SettingsViewControllerDelegate {
+    func setUnits(settings: Settings) {
+        heightUnit = settings.height.rawValue
+        diameterUnit = settings.diameter.rawValue
+        massUnit = settings.weight.rawValue
+        loadUnit = settings.payload.rawValue
     }
 }

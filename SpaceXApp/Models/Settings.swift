@@ -9,13 +9,13 @@ import Foundation
 
 struct Settings {
     enum LengthUnit: String {
-        case m
-        case ft
+        case m = "м"
+        case ft = "фут"
     }
     
     enum MassUnit: String {
-        case kg
-        case ib = "Ib"
+        case kg = "кг"
+        case ib = "фунт"
     }
 
     var height: LengthUnit

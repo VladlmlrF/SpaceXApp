@@ -22,6 +22,7 @@ class SettingsViewController: UIViewController {
         weight: .kg,
         payload: .kg
     )
+    //var delegate: SettingsViewControllerDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()

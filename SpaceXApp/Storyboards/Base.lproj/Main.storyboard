@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSj-qe-M9k">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aSj-qe-M9k">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -31,12 +31,12 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="hmx-zg-ePd" kind="show" identifier="toMainScreen" id="QT9-SU-8Bs"/>
+                        <segue destination="vpj-jp-AlY" kind="show" identifier="toMainScreen" id="QT9-SU-8Bs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dJm-rN-Tcx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="298.55072463768118" y="70.982142857142847"/>
+            <point key="canvasLocation" x="496" y="71"/>
         </scene>
         <!--Page View Controller-->
         <scene sceneID="qc9-ET-Ehz">
@@ -49,21 +49,21 @@
                 </pageViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eLG-My-af1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1039" y="71"/>
+            <point key="canvasLocation" x="1947.826086956522" y="70.982142857142847"/>
         </scene>
         <!--Rocket View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController storyboardIdentifier="rocketVC" modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="RocketViewController" customModule="SpaceXApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ByH-1P-kVH">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="358.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="337"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYt-Ax-F7k">
-                                <rect key="frame" x="0.0" y="328.5" width="414" height="567.5"/>
+                                <rect key="frame" x="0.0" y="307" width="414" height="535"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lol-dL-5lb">
                                         <rect key="frame" x="30" y="30" width="57" height="29"/>
@@ -78,11 +78,11 @@
                                             <imageReference key="image" image="gearshape" catalog="system" symbolScale="large"/>
                                         </state>
                                         <connections>
-                                            <action selector="toSettings" destination="BYZ-38-t0r" eventType="touchUpInside" id="IsA-f9-wXj"/>
+                                            <segue destination="AyY-tN-qvo" kind="presentation" id="tN6-uX-uzP"/>
                                         </connections>
                                     </button>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ICx-cd-XO8">
-                                        <rect key="frame" x="0.0" y="183" width="414" height="384.5"/>
+                                        <rect key="frame" x="0.0" y="183" width="414" height="352"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="sectionIndexBackgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <prototypes>
@@ -335,11 +335,49 @@
                         <outlet property="rocketImageView" destination="ByH-1P-kVH" id="8wb-Hv-FjZ"/>
                         <outlet property="rocketNameLabel" destination="lol-dL-5lb" id="zYM-lV-bMj"/>
                         <outlet property="tableView" destination="ICx-cd-XO8" id="QN7-vf-fli"/>
+                        <segue destination="Gcw-QA-xqP" kind="show" identifier="toLaunches" id="IPL-Ni-lbY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1847.826086956522" y="70.982142857142847"/>
+            <point key="canvasLocation" x="2757.971014492754" y="70.982142857142847"/>
+        </scene>
+        <!--SettingsVC-->
+        <scene sceneID="3bk-uR-dhX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Settings" referencedIdentifier="SettingsVC" id="AyY-tN-qvo" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kzc-21-Mwh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3462.3188405797105" y="-35.491071428571423"/>
+        </scene>
+        <!--LaunchTableVC-->
+        <scene sceneID="wOU-H9-RDE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="RocketLaunchStoryboard" referencedIdentifier="LaunchTableVC" id="Gcw-QA-xqP" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="N0I-Sf-9fP"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zpn-Gc-207" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3481.884057971015" y="148.66071428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="B54-n8-Gmf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="vpj-jp-AlY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="olk-zG-80T"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DlT-Xc-3eI">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="hmx-zg-ePd" kind="relationship" relationship="rootViewController" id="cqH-WI-7Pt"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ahh-QY-3L3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1226" y="71"/>
         </scene>
     </scenes>
     <resources>

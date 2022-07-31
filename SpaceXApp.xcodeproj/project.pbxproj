@@ -88,9 +88,9 @@
 		1A5FA21928902A2D0047EFAE /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */,
 				1A5FA22728918ECA0047EFAE /* StartViewController.swift */,
 				1A5FA22528904E830047EFAE /* PageViewController.swift */,
+				5DAFD0F62895C77000DAAB71 /* RocketViewController.swift */,
 				1A5FA209288FE4250047EFAE /* SettingsViewController.swift */,
 				5DAFD10028965C1200DAAB71 /* RocketLaunchViewController.swift */,
 			);

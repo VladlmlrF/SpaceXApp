@@ -13,7 +13,8 @@ class RocketLaunchViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = rocketName
+        navigationController?.navigationBar.isHidden = false
+        changeNavBar()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -33,5 +34,19 @@ class RocketLaunchViewController: UITableViewController {
         content.image = UIImage(named: launch.imageName)
         cell.contentConfiguration = content
         return cell
+    }
+    
+    private func changeNavBar() {
+        title = rocketName
+        navigationController?.navigationBar.prefersLargeTitles = true
+        
+        let appearance = UINavigationBarAppearance()
+        appearance.backgroundColor = .black
+        appearance.titleTextAttributes = [.foregroundColor: UIColor.white]
+        appearance.largeTitleTextAttributes = [.foregroundColor: UIColor.white]
+
+        navigationController?.navigationBar.tintColor = .white
+        navigationController?.navigationBar.standardAppearance = appearance
+        navigationController?.navigationBar.scrollEdgeAppearance = appearance
     }
 }
