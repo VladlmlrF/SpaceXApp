@@ -15,6 +15,7 @@ class RocketLaunchViewController: UITableViewController {
         super.viewDidLoad()
         navigationController?.navigationBar.isHidden = false
         changeNavBar()
+        tableView.allowsSelection = false
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -31,7 +32,12 @@ class RocketLaunchViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         content.text = launch.launchName
         content.secondaryText = launch.date
+        content.textProperties.color = .white
+        content.secondaryTextProperties.color = .white
+        content.imageProperties.maximumSize = CGSize(width: 32, height: 32)
         content.image = UIImage(named: launch.imageName)
+        content.directionalLayoutMargins.top = 15
+        content.directionalLayoutMargins.bottom = 15
         cell.contentConfiguration = content
         return cell
     }
