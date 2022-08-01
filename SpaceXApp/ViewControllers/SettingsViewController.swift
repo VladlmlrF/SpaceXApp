@@ -38,7 +38,6 @@ class SettingsViewController: UIViewController {
         selectSegment(title: settings.weight.rawValue, in: massSegmentedControl)
         selectSegment(title: settings.payload.rawValue, in: payloadSegmentedControl)
         
-        
         for segmentedControler in segmentedControlers {
             segmentedControler?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: textUnselectedColor], for: .normal)
             segmentedControler?.setTitleTextAttributes([NSAttributedString.Key.foregroundColor: textSelectedColor], for: .selected)
