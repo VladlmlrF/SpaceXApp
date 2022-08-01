@@ -8,14 +8,14 @@
 import Foundation
 
 struct Settings {
-    enum LengthUnit: String {
-        case m = "м"
-        case ft = "фут"
+    enum LengthUnit: Int {
+        case m
+        case ft
     }
     
-    enum MassUnit: String {
-        case kg = "кг"
-        case ib = "фунт"
+    enum MassUnit: Int {
+        case kg
+        case lb
     }
 
     var height: LengthUnit

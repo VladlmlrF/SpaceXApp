@@ -70,36 +70,16 @@ class RocketViewController: UIViewController {
         setupViews()
         
         heightUnitLabel.text = heightUnit
-        switch heightUnit {
-        case "м":
-            heightValueLabel.text = String(rocket.height)
-        default:
-            heightValueLabel.text = String(rocket.height * 3.28)
-        }
+        heightValueLabel.text = String(rocket.height)
         
         diameterUnitLabel.text = diameterUnit
-        switch diameterUnit {
-        case "м":
-            diameterValueLabel.text = String(rocket.diameter)
-        default:
-            diameterValueLabel.text = String(rocket.diameter * 3.28)
-        }
+        diameterValueLabel.text = String(rocket.diameter)
         
         massUnitLabel.text = massUnit
-        switch massUnit {
-        case "кг":
-            massValueLabel.text = String(rocket.mass)
-        default:
-            massValueLabel.text = String(rocket.mass * 2.2)
-        }
+        massValueLabel.text = String(rocket.mass)
         
         loadUnitLabel.text = loadUnit
-        switch loadUnit {
-        case "кг":
-            loadValueLabel.text = String(rocket.load)
-        default:
-            loadValueLabel.text = String(rocket.load * 2.2)
-        }
+        loadValueLabel.text = String(rocket.load)
         
         setupTableView()
     }
@@ -110,12 +90,20 @@ class RocketViewController: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let rocketLaunchVC = segue.destination as? RocketLaunchViewController else { return }
-        //guard let settingsVC = segue.destination as? SettingsViewController else { return }
-        rocketLaunchVC.rocketName = rocket.name
-        //rocketLaunchVC.rocket = rocket
-        rocketLaunchVC.rocketLaunches = rocket.rocketLaunches
-        //settingsVC.delegate = self
+        if let rocketLaunchVC = segue.destination as? RocketLaunchViewController {
+            rocketLaunchVC.rocketName = rocket.name
+            rocketLaunchVC.rocketLaunches = rocket.rocketLaunches
+        } else if let settingsVC = segue.destination as? SettingsViewController {
+            let heightIndex = heightUnitLabel.text == "м" ? 0 : 1
+            let diameterIndex = diameterUnitLabel.text == "м" ? 0 : 1
+            let massIndex = massUnitLabel.text == "кг" ? 0 : 1
+            let loadIndex = loadUnitLabel.text == "кг" ? 0 : 1
+            settingsVC.delegate = self
+            settingsVC.heightIndex = heightIndex
+            settingsVC.diameterIndex = diameterIndex
+            settingsVC.massIndex = massIndex
+            settingsVC.loadIndex = loadIndex
+        }
     }
     
     //MARK: - Private methods
@@ -254,9 +242,16 @@ extension RocketViewController: UITableViewDataSource {
 
 extension RocketViewController: SettingsViewControllerDelegate {
     func setUnits(settings: Settings) {
-        heightUnit = settings.height.rawValue
-        diameterUnit = settings.diameter.rawValue
-        massUnit = settings.weight.rawValue
-        loadUnit = settings.payload.rawValue
+        heightUnitLabel.text = settings.height == .m ? "м" : "фут"
+        heightValueLabel.text = settings.height == .m ? String(rocket.height) : String(format: "%.2f", (rocket.height * 3.28))
+        
+        diameterUnitLabel.text = settings.diameter == .m ? "м" : "фут"
+        diameterValueLabel.text = settings.diameter == .m ? String(rocket.diameter) : String(format: "%.2f", (rocket.diameter * 3.28))
+        
+        massUnitLabel.text = settings.weight == .kg ? "кг" : "фунт"
+        massValueLabel.text = settings.weight == .kg ? String(rocket.mass) : String(format: "%.2f", (rocket.mass * 2.2))
+        
+        loadUnitLabel.text = settings.payload == .kg ? "кг" : "фунт"
+        loadValueLabel.text = settings.payload == .kg ? String(rocket.load) : String(format: "%.2f", (rocket.load * 2.2))
     }
 }
