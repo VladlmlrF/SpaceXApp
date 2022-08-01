@@ -41,6 +41,7 @@ class RocketViewController: UIViewController {
         "ПЕРВАЯ СТУПЕНЬ",
         "ВТОРАЯ СТУПЕНЬ"
     ]
+    private var settings: Settings?
     
     // MARK: - Properties
     
@@ -94,15 +95,10 @@ class RocketViewController: UIViewController {
             rocketLaunchVC.rocketName = rocket.name
             rocketLaunchVC.rocketLaunches = rocket.rocketLaunches
         } else if let settingsVC = segue.destination as? SettingsViewController {
-            let heightIndex = heightUnitLabel.text == "м" ? 0 : 1
-            let diameterIndex = diameterUnitLabel.text == "м" ? 0 : 1
-            let massIndex = massUnitLabel.text == "кг" ? 0 : 1
-            let loadIndex = loadUnitLabel.text == "кг" ? 0 : 1
             settingsVC.delegate = self
-            settingsVC.heightIndex = heightIndex
-            settingsVC.diameterIndex = diameterIndex
-            settingsVC.massIndex = massIndex
-            settingsVC.loadIndex = loadIndex
+            if let settings = settings {
+                settingsVC.settings = settings
+            }
         }
     }
     
@@ -242,6 +238,7 @@ extension RocketViewController: UITableViewDataSource {
 
 extension RocketViewController: SettingsViewControllerDelegate {
     func setUnits(settings: Settings) {
+        self.settings = settings
         heightUnitLabel.text = settings.height == .m ? "м" : "фут"
         heightValueLabel.text = settings.height == .m ? String(rocket.height) : String(format: "%.2f", (rocket.height * 3.28))
         
