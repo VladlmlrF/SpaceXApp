@@ -36,6 +36,10 @@ class RocketViewController: UIViewController {
     // MARK: - Private properties
     
     private let showLaunchesButton = UIButton(type: .roundedRect)
+    private let heightUnit = "м"
+    private let diameterUnit = "м"
+    private let massUnit = "кг"
+    private let loadUnit = "кг"
     private let sectionNames = [
         "",
         "ПЕРВАЯ СТУПЕНЬ",
@@ -44,11 +48,6 @@ class RocketViewController: UIViewController {
     private var settings: Settings?
     
     // MARK: - Properties
-    
-    var heightUnit = "м"
-    var diameterUnit = "м"
-    var massUnit = "кг"
-    var loadUnit = "кг"
     
     var numberOfPages = 0
     var currentPage = 0
