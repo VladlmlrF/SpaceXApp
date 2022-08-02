@@ -239,16 +239,16 @@ extension RocketViewController: UITableViewDataSource {
 extension RocketViewController: SettingsViewControllerDelegate {
     func setUnits(settings: Settings) {
         self.settings = settings
-        heightUnitLabel.text = settings.height == .m ? "м" : "фут"
-        heightValueLabel.text = settings.height == .m ? String(rocket.height) : String(format: "%.2f", (rocket.height * 3.28))
+        heightUnitLabel.text = settings.height.text
+        heightValueLabel.text = settings.height.format(value: rocket.height)
         
-        diameterUnitLabel.text = settings.diameter == .m ? "м" : "фут"
-        diameterValueLabel.text = settings.diameter == .m ? String(rocket.diameter) : String(format: "%.2f", (rocket.diameter * 3.28))
+        diameterUnitLabel.text = settings.diameter.text
+        diameterValueLabel.text = settings.diameter.format(value: rocket.diameter)
         
-        massUnitLabel.text = settings.weight == .kg ? "кг" : "фунт"
-        massValueLabel.text = settings.weight == .kg ? String(rocket.mass) : String(format: "%.2f", (rocket.mass * 2.2))
+        massUnitLabel.text = settings.weight.text
+        massValueLabel.text = settings.weight.format(value: rocket.mass)
         
-        loadUnitLabel.text = settings.payload == .kg ? "кг" : "фунт"
-        loadValueLabel.text = settings.payload == .kg ? String(rocket.load) : String(format: "%.2f", (rocket.load * 2.2))
+        loadUnitLabel.text = settings.payload.text
+        loadValueLabel.text = settings.payload.format(value: rocket.load)
     }
 }
